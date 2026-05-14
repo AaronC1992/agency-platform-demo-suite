@@ -36,7 +36,7 @@ function statusBadge(status) {
 
 function stars(n) {
   if (!n) return <span className="badge badge-gray">Pending</span>
-  return <span style={{ color: '#f59e0b' }}>{'★'.repeat(n)}{'☆'.repeat(5 - n)}</span>
+  return <span style={{ fontWeight: 700, color: '#64748b' }}>{n} / 5</span>
 }
 
 // ─── Dashboard Page ───────────────────────────────────────────
@@ -121,7 +121,7 @@ function ClientsPage({ onNavigate }) {
               <div className="client-card-stat"><strong>{c.campaigns}</strong> Campaigns</div>
               <div className="client-card-stat"><strong>{c.leadsThisMonth}</strong> Leads / Mo</div>
               <div className="client-card-stat">
-                <strong style={{ color: '#f59e0b' }}>{'★'.repeat(Math.round(c.rating))}</strong> {c.rating}
+                <span style={{ fontWeight: 700 }}>{c.rating} / 5</span>
               </div>
             </div>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -336,7 +336,7 @@ function ReviewsPage({ reviews, onAddReview }) {
       <div className="stats-grid" style={{ gridTemplateColumns: 'repeat(4, 1fr)', marginBottom: '1.5rem' }}>
         <StatCard label="Requests Sent" value={reviews.length} />
         <StatCard label="Reviews Received" value={completed.length} />
-        <StatCard label="Average Rating" value={`${avgRating} ★`} />
+        <StatCard label="Average Rating" value={`${avgRating} / 5`} />
         <StatCard label="Pending Requests" value={reviews.filter(r => r.status !== 'Completed').length} />
       </div>
       <DataTable columns={cols} rows={reviews} />

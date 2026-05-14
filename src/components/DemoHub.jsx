@@ -222,17 +222,17 @@ export default function DemoHub({ onOpenDemo }) {
           </div>
           <div className="money-cards">
             <div className="money-card">
-              <div className="money-card-icon">💰</div>
+              <div className="money-card-icon">01</div>
               <h3>Sell setup fees</h3>
               <p>Charge a one time onboarding fee to build, brand, and launch the platform for each new client.</p>
             </div>
             <div className="money-card">
-              <div className="money-card-icon">📆</div>
+              <div className="money-card-icon">02</div>
               <h3>Add monthly support</h3>
               <p>Stack recurring revenue with a monthly plan covering updates, maintenance, and client support.</p>
             </div>
             <div className="money-card">
-              <div className="money-card-icon">📦</div>
+              <div className="money-card-icon">03</div>
               <h3>Bundle with websites, ads, SEO, or social media</h3>
               <p>Include the platform as part of a larger retainer to increase the value of every client relationship.</p>
             </div>

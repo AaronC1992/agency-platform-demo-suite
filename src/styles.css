@@ -261,7 +261,19 @@ h1, h2, h3, h4, h5 { line-height: 1.25; font-weight: 700; }
   padding: 2rem 1.75rem;
   text-align: center;
 }
-.money-card-icon { font-size: 2rem; margin-bottom: 1rem; }
+.money-card-icon {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--primary);
+  background: var(--primary-light);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
 .money-card h3 { font-size: 1.0625rem; font-weight: 700; margin-bottom: 0.625rem; color: var(--dark); }
 .money-card p { font-size: 0.875rem; color: var(--mid); line-height: 1.65; }
 .partnership-card {
