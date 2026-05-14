@@ -263,7 +263,7 @@ export default function DemoHub({ onOpenDemo }) {
         <div className="container">
           <div className="cta-inner">
             <h2>Ready to launch one of these platforms under your brand?</h2>
-            <p>We build and deliver the full software under your agency's name. You own the client relationship and keep the recurring revenue.</p>
+            <p>We build and deliver the full software under your agency's name. You own the client relationship and grow your recurring revenue.</p>
             <button className="btn btn-white btn-lg" onClick={() => setShowModal(true)}>
               Get Started
             </button>
