@@ -1,8 +1,6 @@
 # Agency Platform Demo Suite
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/AaronC1992/agency-platform-demo-suite)
-
-> Click the button above to launch the app instantly in your browser — no installation required.
+**[🔗 Live App](https://agency-platform-demo-suite.vercel.app)**
 
 ---
 
