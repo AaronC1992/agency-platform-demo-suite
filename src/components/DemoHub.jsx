@@ -93,10 +93,9 @@ export default function DemoHub({ onOpenDemo }) {
       <section className="hero">
         <div className="hero-inner">
           <div className="hero-badge">White Label Platform Suite</div>
-          <h1>White Label Platforms Marketing Agencies Can Resell</h1>
+          <h1>White label client platforms your agency can resell under your brand.</h1>
           <p>
-            Three interactive demos showing client portals, mini CRMs, and campaign
-            tracking tools built for small business marketing packages.
+            I build the software behind the scenes. You keep the client relationship.
           </p>
           <button className="btn btn-white btn-lg" onClick={scrollToDemo}>
             View Demos
