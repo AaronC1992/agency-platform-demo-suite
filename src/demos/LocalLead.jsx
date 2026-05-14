@@ -645,7 +645,6 @@ export default function LocalLead() {
       navItems={NAV}
       activePage={activePage}
       onPageChange={setActivePage}
-      themeClass="theme-field"
     >
       {activePage === 'dashboard' && <LLDashboard leads={leads} />}
       {activePage === 'leads' && (
