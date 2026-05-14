@@ -385,27 +385,17 @@ h1, h2, h3, h4, h5 { line-height: 1.25; font-weight: 700; }
   --primary-light: #fffbeb;
   --bg: #f5f3ef;
 }
-.theme-field .sidebar {
-  background: #0d1117;
-  border-right: 1px solid #1f2937;
-}
+.theme-field .sidebar { background: #0d1117; border-right: 1px solid #1f2937; }
 .theme-field .sidebar-title { color: #f9fafb; }
 .theme-field .sidebar-subtitle { color: #6b7280; }
 .theme-field .powered-label { color: #374151; border-top-color: #1f2937; }
 .theme-field .nav-item { color: #9ca3af; }
 .theme-field .nav-item:hover { background: rgba(255,255,255,0.05); color: #f9fafb; }
 .theme-field .nav-item.active { background: #f59e0b; color: #111827; font-weight: 700; }
-.theme-field .dashboard-topbar {
-  background: #111827;
-  border-bottom: 1px solid #1f2937;
-}
+.theme-field .dashboard-topbar { background: #111827; border-bottom: 1px solid #1f2937; }
 .theme-field .dashboard-topbar .page-title { color: #f9fafb; }
 .theme-field .hamburger span { background: #f9fafb; }
-.theme-field .stat-card {
-  border-left: 4px solid var(--primary);
-  border-top: none;
-  border-radius: 0 var(--radius) var(--radius) 0;
-}
+.theme-field .stat-card { border-left: 4px solid var(--primary); border-top: none; border-radius: 0 var(--radius) var(--radius) 0; }
 .theme-field .btn-primary { background: #f59e0b; color: #111827; }
 .theme-field .btn-primary:hover { background: #d97706; }
 .theme-field .btn-secondary:hover { background: #fffbeb; }
@@ -419,29 +409,18 @@ h1, h2, h3, h4, h5 { line-height: 1.25; font-weight: 700; }
   --primary-light: #f5f3ff;
   --bg: #faf8ff;
 }
-.theme-rewards .sidebar {
-  background: linear-gradient(175deg, #2e1065 0%, #4c1d95 45%, #5b21b6 100%);
-  border-right: none;
-}
+.theme-rewards .sidebar { background: linear-gradient(175deg, #2e1065 0%, #4c1d95 45%, #5b21b6 100%); border-right: none; }
 .theme-rewards .sidebar-title { color: white; }
 .theme-rewards .sidebar-subtitle { color: rgba(196,181,253,0.65); }
 .theme-rewards .powered-label { color: rgba(167,139,250,0.45); border-top-color: rgba(255,255,255,0.08); }
 .theme-rewards .nav-item { color: rgba(221,214,254,0.65); }
 .theme-rewards .nav-item:hover { background: rgba(255,255,255,0.09); color: white; }
-.theme-rewards .nav-item.active {
-  background: rgba(255,255,255,0.18);
-  color: white;
-  font-weight: 700;
-  backdrop-filter: blur(4px);
-}
-.theme-rewards .dashboard-topbar {
-  border-bottom: 2px solid #7c3aed;
-}
+.theme-rewards .nav-item.active { background: rgba(255,255,255,0.18); color: white; font-weight: 700; backdrop-filter: blur(4px); }
+.theme-rewards .dashboard-topbar { border-bottom: 2px solid #7c3aed; }
 .theme-rewards .dashboard-topbar .page-title { color: #4c1d95; }
 .theme-rewards .btn-primary { background: #7c3aed; color: white; }
 .theme-rewards .btn-primary:hover { background: #6d28d9; }
-/* Colorful per-card stat accents */
-.theme-rewards .stats-grid .stat-card { border-top: 3px solid transparent; border-radius: var(--radius); }
+.theme-rewards .stats-grid .stat-card { border-top: 3px solid transparent; }
 .theme-rewards .stats-grid .stat-card:nth-child(1) { border-top-color: #7c3aed; }
 .theme-rewards .stats-grid .stat-card:nth-child(2) { border-top-color: #0891b2; }
 .theme-rewards .stats-grid .stat-card:nth-child(3) { border-top-color: #059669; }
@@ -450,6 +429,61 @@ h1, h2, h3, h4, h5 { line-height: 1.25; font-weight: 700; }
 .theme-rewards .stats-grid .stat-card:nth-child(2) .stat-value { color: #0891b2; }
 .theme-rewards .stats-grid .stat-card:nth-child(3) .stat-value { color: #059669; }
 .theme-rewards .stats-grid .stat-card:nth-child(4) .stat-value { color: #db2777; }
+
+/* ============================================================
+   Demo Preview Modal
+============================================================ */
+.demo-preview { display: flex; flex-direction: column; gap: 1.5rem; }
+.demo-preview-tagline {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--primary);
+  border-left: 3px solid var(--primary);
+  padding-left: 0.875rem;
+  line-height: 1.4;
+}
+.demo-preview-overview {
+  font-size: 0.9375rem;
+  color: var(--mid);
+  line-height: 1.7;
+  background: var(--bg);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.125rem;
+}
+.demo-preview-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+.demo-preview-section h4 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+.demo-preview-section ul { display: flex; flex-direction: column; gap: 7px; }
+.demo-preview-section li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: var(--dark);
+  line-height: 1.45;
+}
+.preview-check { color: var(--success); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+.demo-preview-section--alt { background: var(--bg); border-radius: var(--radius-sm); padding: 1rem; }
+.preview-arrow { color: var(--primary); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+.demo-preview-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border);
+}
+@media (max-width: 640px) {
+  .demo-preview-sections { grid-template-columns: 1fr; }
+}
 
 /* ============================================================
    Stat Cards

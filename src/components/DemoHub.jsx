@@ -15,6 +15,24 @@ const demos = [
       'Monthly client reports',
       'Full white label branding controls',
     ],
+    tagline: 'Give every client a branded portal they log into every week.',
+    overview: 'AgencyOS is a white label client portal your agency resells under your name. Each client gets their own branded dashboard showing exactly what your agency does for them — leads, campaigns, reviews, and results. It replaces the "what are we paying for?" conversation with real data clients can see themselves.',
+    capabilities: [
+      'Track every lead with status, source, and follow-up notes',
+      'Monitor campaign performance with charts and real metrics',
+      'Send review requests and track every response',
+      'Run referral programs with unique links and attribution',
+      'Generate branded monthly reports clients can download',
+      'Full white label branding — your logo, colors, and domain',
+    ],
+    possibilities: [
+      'Automated monthly PDF reports emailed directly to clients',
+      'Integration with Google Ads, Facebook Ads, or any ad platform',
+      'Client-facing goal tracking with visual progress bars',
+      'Multi-location support for franchise or chain clients',
+      'Internal agency task and note layer behind the scenes',
+      'Custom onboarding flows branded to your agency',
+    ],
   },
   {
     id: 2,
@@ -29,6 +47,24 @@ const demos = [
       'Review request automation',
       'Revenue and conversion reporting',
     ],
+    tagline: 'A job tracker your service business clients will actually use.',
+    overview: 'LocalLead is a simple CRM built for local service businesses that want to stop losing jobs to disorganization. It covers the full lifecycle from first call to closed invoice — lead intake, estimates, scheduling, follow-ups, and reviews. Delivered under your agency brand, it becomes a sticky product your clients depend on month after month.',
+    capabilities: [
+      'Capture and manage leads with status and source tracking',
+      'Visual pipeline board to see every job at a glance',
+      'Create and track estimates with approval status',
+      'Schedule follow-ups and jobs on a built-in calendar',
+      'Request and monitor Google reviews from won jobs',
+      'Revenue and conversion reporting by month',
+    ],
+    possibilities: [
+      'SMS and email follow-up automation on new leads',
+      'Two-way texting from inside the platform',
+      'QuickBooks or invoicing integration',
+      'Technician scheduling and job assignment',
+      'Photo uploads for job documentation in the field',
+      'Mobile-friendly field version for techs on the road',
+    ],
   },
   {
     id: 3,
@@ -42,6 +78,24 @@ const demos = [
       'Referral program tracking',
       'Customer signup and engagement data',
       'Campaign performance analytics',
+    ],
+    tagline: 'A QR-powered loyalty and rewards engine that drives repeat business.',
+    overview: 'LocalBoost gives restaurants, retailers, and local shops a branded loyalty and rewards platform without the punch cards. Your agency manages the campaigns, generates the QR codes, and tracks every redemption. It is a sticky recurring product your clients hand directly to their customers — and it keeps those customers coming back.',
+    capabilities: [
+      'Generate and track QR codes for any promotion or offer',
+      'Manage coupons, deals, and redemption limits per campaign',
+      'Run referral programs with unique sharing links',
+      'Track customer signups and visit frequency',
+      'Manage multiple businesses from one agency dashboard',
+      'Campaign analytics with redemption rates and revenue impact',
+    ],
+    possibilities: [
+      'Digital loyalty punch cards with automatic reward triggers',
+      'Seasonal and holiday campaign templates',
+      'Text or email campaigns to the rewards subscriber list',
+      'Coalition campaigns across multiple local businesses',
+      'Integration with Square, Clover, or any POS system',
+      'Branded mobile-friendly customer-facing web app',
     ],
   },
 ]
@@ -69,8 +123,10 @@ const blankForm = { agencyName: '', contactName: '', clientType: '', platform: '
 
 export default function DemoHub({ onOpenDemo }) {
   const [showModal, setShowModal] = useState(false)
+  const [previewId, setPreviewId] = useState(null)
   const [form, setForm] = useState(blankForm)
   const [submitted, setSubmitted] = useState(false)
+  const previewDemo = demos.find(d => d.id === previewId) ?? null
 
   function handleSubmit(e) {
     e.preventDefault()
@@ -124,7 +180,7 @@ export default function DemoHub({ onOpenDemo }) {
                     <li key={f}><span className="check">✓</span>{f}</li>
                   ))}
                 </ul>
-                <button className="btn btn-primary" onClick={() => onOpenDemo(demo.id)}>
+                <button className="btn btn-primary" onClick={() => setPreviewId(demo.id)}>
                   Open Demo
                 </button>
               </div>
@@ -259,6 +315,42 @@ export default function DemoHub({ onOpenDemo }) {
               </div>
             </form>
           )}
+        </Modal>
+      )}
+
+      {/* Demo Preview Modal */}
+      {previewDemo && (
+        <Modal title={previewDemo.name} onClose={() => setPreviewId(null)} size="lg">
+          <div className="demo-preview">
+            <p className="demo-preview-tagline">{previewDemo.tagline}</p>
+            <p className="demo-preview-overview">{previewDemo.overview}</p>
+            <div className="demo-preview-sections">
+              <div className="demo-preview-section">
+                <h4>What it can do</h4>
+                <ul>
+                  {previewDemo.capabilities.map(c => (
+                    <li key={c}><span className="preview-check">✓</span>{c}</li>
+                  ))}
+                </ul>
+              </div>
+              <div className="demo-preview-section demo-preview-section--alt">
+                <h4>What we can add or customize</h4>
+                <ul>
+                  {previewDemo.possibilities.map(p => (
+                    <li key={p}><span className="preview-arrow">→</span>{p}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <div className="demo-preview-footer">
+              <button
+                className="btn btn-primary btn-lg"
+                onClick={() => { onOpenDemo(previewDemo.id); setPreviewId(null) }}
+              >
+                Launch Demo →
+              </button>
+            </div>
+          </div>
         </Modal>
       )}
     </div>
