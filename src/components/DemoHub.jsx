@@ -133,8 +133,35 @@ export default function DemoHub({ onOpenDemo }) {
         </div>
       </section>
 
-      {/* Partnership Models */}
+      {/* How agencies make money */}
       <section className="section section-alt">
+        <div className="container">
+          <div className="section-header">
+            <h2>How agencies make money with this</h2>
+            <p>Three proven ways to turn a white label platform into recurring agency revenue.</p>
+          </div>
+          <div className="money-cards">
+            <div className="money-card">
+              <div className="money-card-icon">💰</div>
+              <h3>Sell setup fees</h3>
+              <p>Charge a one-time onboarding fee to build, brand, and launch the platform for each new client.</p>
+            </div>
+            <div className="money-card">
+              <div className="money-card-icon">📆</div>
+              <h3>Add monthly support</h3>
+              <p>Stack recurring revenue with a monthly plan covering updates, maintenance, and client support.</p>
+            </div>
+            <div className="money-card">
+              <div className="money-card-icon">📦</div>
+              <h3>Bundle with websites, ads, SEO, or social media</h3>
+              <p>Include the platform as part of a larger retainer to increase the value of every client relationship.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Partnership Models */}
+      <section className="section">
         <div className="container">
           <div className="section-header">
             <h2>Partnership Models</h2>
