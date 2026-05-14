@@ -530,6 +530,7 @@ export default function LocalBoost() {
       navItems={NAV}
       activePage={activePage}
       onPageChange={setActivePage}
+      themeClass="theme-rewards"
     >
       {activePage === 'dashboard' && <LBDashboard />}
       {activePage === 'campaigns' && (

@@ -1,10 +1,10 @@
 import { useState } from 'react'
 
-export default function DashboardLayout({ title, subtitle, poweredBy, navItems, activePage, onPageChange, children }) {
+export default function DashboardLayout({ title, subtitle, poweredBy, navItems, activePage, onPageChange, children, themeClass }) {
   const [sidebarOpen, setSidebarOpen] = useState(false)
 
   return (
-    <div className="dashboard">
+    <div className={`dashboard${themeClass ? ` ${themeClass}` : ''}`}>
       {sidebarOpen && (
         <div className="sidebar-overlay" onClick={() => setSidebarOpen(false)} />
       )}
