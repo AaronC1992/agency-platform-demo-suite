@@ -411,7 +411,7 @@ function ReportsPage() {
       leads: 22, bestCampaign: 'HVAC Spring Special', reviews: 4,
       referralLeads: 3, revenue: '$14,200',
       steps: [
-        'Launch a referral follow-up sequence for 3 pending referrals.',
+        'Launch a referral follow up sequence for 3 pending referrals.',
         'Increase Google Ad budget by 15% for the spring heating season.',
         'Request reviews from the 2 jobs completed last week.',
         'Schedule a monthly report review call with the client.',
@@ -431,7 +431,7 @@ function ReportsPage() {
       leads: 12, bestCampaign: 'New Patient Drive', reviews: 3,
       referralLeads: 2, revenue: '$8,600',
       steps: [
-        'Send follow-up to 3 new leads who have not responded.',
+        'Send follow up to 3 new leads who have not responded.',
         'Launch a seasonal cleaning promotion for spring.',
         'Request reviews from 4 new patients from last month.',
         'Add a patient referral incentive to the portal.',

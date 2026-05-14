@@ -91,14 +91,14 @@ export const localLeadEstimates = [
 
 export const localLeadCalendar = [
   { date: 'Mon Feb 17', time: '9:00 AM', title: 'Estimate – Greg Patterson', sub: 'AC Installation · 4210 Oak St', type: 'estimate' },
-  { date: 'Mon Feb 17', time: '11:30 AM', title: 'Follow-up Call – Lisa Hartman', sub: 'Heating Repair · (417) 555-0332', type: 'followup' },
+  { date: 'Mon Feb 17', time: '11:30 AM', title: 'Follow up Call – Lisa Hartman', sub: 'Heating Repair · (417) 555-0332', type: 'followup' },
   { date: 'Tue Feb 18', time: '8:00 AM', title: 'Job Start – Tom Bradley', sub: 'AC Repair · 811 Maple Ave', type: 'job' },
   { date: 'Tue Feb 18', time: '2:00 PM', title: 'Estimate – Mark Jensen', sub: 'AC Installation · 516 Pine Rd', type: 'estimate' },
-  { date: 'Wed Feb 19', time: '9:30 AM', title: 'Follow-up Call – Mark Jensen', sub: 'AC Installation estimate follow-up', type: 'followup' },
+  { date: 'Wed Feb 19', time: '9:30 AM', title: 'Follow up Call – Mark Jensen', sub: 'AC Installation estimate follow up', type: 'followup' },
   { date: 'Wed Feb 19', time: '3:00 PM', title: 'Review Request – Tom Bradley', sub: 'Send Google review request', type: 'review' },
   { date: 'Thu Feb 20', time: '10:00 AM', title: 'Job Start – Debra Simmons', sub: 'Furnace Replacement · 221 Birch Ln', type: 'job' },
   { date: 'Thu Feb 20', time: '1:00 PM', title: 'Estimate – Cynthia Rhodes', sub: 'Duct Cleaning · 908 Elm St', type: 'estimate' },
-  { date: 'Fri Feb 21', time: '9:00 AM', title: 'Follow-up – Steve Ingram', sub: 'HVAC Maintenance package', type: 'followup' },
+  { date: 'Fri Feb 21', time: '9:00 AM', title: 'Follow up – Steve Ingram', sub: 'HVAC Maintenance package', type: 'followup' },
   { date: 'Fri Feb 21', time: '4:00 PM', title: 'Review Request – Debra Simmons', sub: 'Send Google review request', type: 'review' },
 ]
 

@@ -51,10 +51,10 @@ function LLDashboard({ leads }) {
   const recentLeads = leads.slice(0, 4)
   const maxSource = Math.max(...leadSources.map(s => s.count), 1)
   const builtFor = [
-    { title: 'Never Lose a Website Lead', desc: 'Every form submission lands in your pipeline automatically, ready for follow-up.' },
+    { title: 'Never Lose a Website Lead', desc: 'Every form submission lands in your pipeline automatically, ready for follow up.' },
     { title: 'Track Every Estimate', desc: 'Know exactly which estimates are pending, accepted, or still waiting for a callback.' },
     { title: 'Know Which Marketing Works', desc: 'See exactly which lead sources are generating the most revenue for your business.' },
-    { title: 'Follow Up Faster', desc: 'Daily follow-up reminders keep your team on top of every opportunity in the pipeline.' },
+    { title: 'Follow Up Faster', desc: 'Daily follow up reminders keep your team on top of every opportunity in the pipeline.' },
     { title: 'Request More Reviews', desc: 'Automated review requests go out after every completed job to build your reputation.' },
   ]
 
@@ -78,9 +78,9 @@ function LLDashboard({ leads }) {
       </div>
       <div className="two-col mb-6">
         <div className="card">
-          <div className="card-header"><h3>Today's Follow-Ups</h3></div>
+          <div className="card-header"><h3>Today's Follow Ups</h3></div>
           <div className="card-body">
-            {todayFollowUps.length === 0 ? <p style={{ color: 'var(--muted)', fontSize: '0.875rem' }}>No follow-ups scheduled today.</p> : (
+            {todayFollowUps.length === 0 ? <p style={{ color: 'var(--muted)', fontSize: '0.875rem' }}>No follow ups scheduled today.</p> : (
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                 {todayFollowUps.map(l => (
                   <div key={l.id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingBottom: '0.75rem', borderBottom: '1px solid var(--border)' }}>
@@ -290,7 +290,7 @@ function LLPipeline({ leads, onUpdateStatus }) {
                     </div>
                     <div className="pipeline-card-footer">
                       <span className="pipeline-card-value">{lead.value}</span>
-                      <span className="pipeline-card-date">Follow-up: {lead.followUp}</span>
+                      <span className="pipeline-card-date">Follow up: {lead.followUp}</span>
                     </div>
                     <div style={{ marginTop: '0.625rem' }}>
                       <select
@@ -404,7 +404,7 @@ function LLCalendar() {
     return acc
   }, {})
 
-  const typeLabel = { estimate: 'Estimate', followup: 'Follow-Up', job: 'Job', review: 'Review Request' }
+  const typeLabel = { estimate: 'Estimate', followup: 'Follow Up', job: 'Job', review: 'Review Request' }
 
   return (
     <div>
@@ -607,7 +607,7 @@ function LLSettings() {
           <div className="card-body">
             {[
               { id: 'newLead', label: 'New lead notifications' },
-              { id: 'followUp', label: 'Follow-up due reminders' },
+              { id: 'followUp', label: 'Follow up due reminders' },
               { id: 'estimate', label: 'Estimate status updates' },
               { id: 'review', label: 'Review received alerts' },
             ].map(item => (

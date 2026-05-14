@@ -430,7 +430,7 @@ function LBReports() {
             'Add 2 more restaurant partners to increase foot traffic variety and redemption volume.',
             'Test window sticker QR placement at all businesses to match the receipt success rate.',
             'Launch a spring referral contest with $50 reward for top referrer of the month.',
-            'Create a follow-up text sequence for customers who scanned but did not redeem.',
+            'Create a follow up text sequence for customers who scanned but did not redeem.',
             'Pitch the next campaign box to 3 prospective businesses from the dental and fitness categories.',
           ].map((s, i) => (
             <div key={i} className="report-recommendation"><p>{s}</p></div>
@@ -499,7 +499,7 @@ function LBSettings() {
             {[
               { id: 'scanAlerts', label: 'QR scan milestone alerts' },
               { id: 'weeklyReport', label: 'Weekly performance summary' },
-              { id: 'redemptionAlerts', label: 'Real-time redemption alerts' },
+              { id: 'redemptionAlerts', label: 'Real time redemption alerts' },
               { id: 'referralAlerts', label: 'New referral notifications' },
             ].map(item => (
               <div key={item.id} className="toggle-row">

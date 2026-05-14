@@ -8,7 +8,7 @@ const demos = [
     description: 'Client portal for tracking leads, campaigns, reviews, referrals, and monthly reports.',
     bestFit: 'Marketing agencies managing roofing companies, dental practices, auto repair, and home service clients.',
     features: [
-      'Lead tracking and follow-up management',
+      'Lead tracking and follow up management',
       'Campaign performance monitoring',
       'Review request and tracking system',
       'Referral program management',
@@ -18,7 +18,7 @@ const demos = [
     tagline: 'Give every client a branded portal they log into every week.',
     overview: 'AgencyOS is a white label client portal your agency resells under your name. Each client gets their own branded dashboard showing exactly what your agency does for them — leads, campaigns, reviews, and results. It replaces the "what are we paying for?" conversation with real data clients can see themselves.',
     capabilities: [
-      'Track every lead with status, source, and follow-up notes',
+      'Track every lead with status, source, and follow up notes',
       'Monitor campaign performance with charts and real metrics',
       'Send review requests and track every response',
       'Run referral programs with unique links and attribution',
@@ -28,8 +28,8 @@ const demos = [
     possibilities: [
       'Automated monthly PDF reports emailed directly to clients',
       'Integration with Google Ads, Facebook Ads, or any ad platform',
-      'Client-facing goal tracking with visual progress bars',
-      'Multi-location support for franchise or chain clients',
+      'Client facing goal tracking with visual progress bars',
+      'Multi location support for franchise or chain clients',
       'Internal agency task and note layer behind the scenes',
       'Custom onboarding flows branded to your agency',
     ],
@@ -37,33 +37,33 @@ const demos = [
   {
     id: 2,
     name: 'LocalLead Mini CRM',
-    description: 'Simple CRM for contractors and local service businesses to track leads, estimates, follow-ups, jobs, and reviews.',
+    description: 'Simple CRM for contractors and local service businesses to track leads, estimates, follow ups, jobs, and reviews.',
     bestFit: 'HVAC companies, plumbers, contractors, roofers, and home service businesses.',
     features: [
       'Visual lead pipeline board',
       'Estimate creation and tracking',
-      'Follow-up calendar and reminders',
+      'Follow up calendar and reminders',
       'Job won and lost reporting',
       'Review request automation',
       'Revenue and conversion reporting',
     ],
     tagline: 'A job tracker your service business clients will actually use.',
-    overview: 'LocalLead is a simple CRM built for local service businesses that want to stop losing jobs to disorganization. It covers the full lifecycle from first call to closed invoice — lead intake, estimates, scheduling, follow-ups, and reviews. Delivered under your agency brand, it becomes a sticky product your clients depend on month after month.',
+    overview: 'LocalLead is a simple CRM built for local service businesses that want to stop losing jobs to disorganization. It covers the full lifecycle from first call to closed invoice — lead intake, estimates, scheduling, follow ups, and reviews. Delivered under your agency brand, it becomes a sticky product your clients depend on month after month.',
     capabilities: [
       'Capture and manage leads with status and source tracking',
       'Visual pipeline board to see every job at a glance',
       'Create and track estimates with approval status',
-      'Schedule follow-ups and jobs on a built-in calendar',
+      'Schedule follow ups and jobs on a built in calendar',
       'Request and monitor Google reviews from won jobs',
       'Revenue and conversion reporting by month',
     ],
     possibilities: [
-      'SMS and email follow-up automation on new leads',
+      'SMS and email follow up automation on new leads',
       'Two-way texting from inside the platform',
       'QuickBooks or invoicing integration',
       'Technician scheduling and job assignment',
       'Photo uploads for job documentation in the field',
-      'Mobile-friendly field version for techs on the road',
+      'Mobile friendly field version for techs on the road',
     ],
   },
   {
@@ -74,7 +74,7 @@ const demos = [
     features: [
       'QR code generation and scan tracking',
       'Coupon and offer redemption tracking',
-      'Multi-business campaign management',
+      'Multi business campaign management',
       'Referral program tracking',
       'Customer signup and engagement data',
       'Campaign performance analytics',
@@ -95,7 +95,7 @@ const demos = [
       'Text or email campaigns to the rewards subscriber list',
       'Coalition campaigns across multiple local businesses',
       'Integration with Square, Clover, or any POS system',
-      'Branded mobile-friendly customer-facing web app',
+      'Branded mobile friendly customer facing web app',
     ],
   },
 ]
@@ -103,7 +103,7 @@ const demos = [
 const partnershipModels = [
   {
     title: 'Flat White Label Build',
-    desc: 'One-time setup fee for a fully branded platform delivered to your agency and ready for clients.',
+    desc: 'One time setup fee for a fully branded platform delivered to your agency and ready for clients.',
   },
   {
     title: 'Monthly Support',
@@ -111,7 +111,7 @@ const partnershipModels = [
   },
   {
     title: 'Revenue Split',
-    desc: 'Partner on client retainers with a shared revenue model for sustainable long-term growth.',
+    desc: 'Partner on client retainers with a shared revenue model for sustainable long term growth.',
   },
   {
     title: 'Pilot Demo Build',
@@ -200,7 +200,7 @@ export default function DemoHub({ onOpenDemo }) {
             <div className="money-card">
               <div className="money-card-icon">💰</div>
               <h3>Sell setup fees</h3>
-              <p>Charge a one-time onboarding fee to build, brand, and launch the platform for each new client.</p>
+              <p>Charge a one time onboarding fee to build, brand, and launch the platform for each new client.</p>
             </div>
             <div className="money-card">
               <div className="money-card-icon">📆</div>
