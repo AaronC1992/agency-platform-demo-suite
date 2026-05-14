@@ -138,8 +138,8 @@ const partnershipModels = [
     desc: 'Partner on client retainers with a shared revenue model for sustainable long term growth.',
   },
   {
-    title: 'Pilot Demo Build',
-    desc: 'Start with a single client pilot to prove the value of the platform before a full rollout.',
+    title: 'Pilot Launch',
+    desc: 'Start with a single client deployment to prove the value before rolling it out across your book of business.',
   },
 ]
 
@@ -262,10 +262,10 @@ export default function DemoHub({ onOpenDemo }) {
       <section className="section cta-section">
         <div className="container">
           <div className="cta-inner">
-            <h2>Want a white label demo for one of your clients?</h2>
-            <p>We will build a custom branded demo tailored to your agency's niche and client base.</p>
+            <h2>Ready to launch one of these platforms under your brand?</h2>
+            <p>We build and deliver the full software under your agency's name. You own the client relationship and keep the recurring revenue.</p>
             <button className="btn btn-white btn-lg" onClick={() => setShowModal(true)}>
-              Request Demo Build
+              Get Started
             </button>
           </div>
         </div>
@@ -273,12 +273,12 @@ export default function DemoHub({ onOpenDemo }) {
 
       {/* Contact Modal */}
       {showModal && (
-        <Modal title="Request a Demo Build" onClose={handleClose}>
+        <Modal title="Request a Platform Build" onClose={handleClose}>
           {submitted ? (
             <div className="success-message">
               <div className="success-icon">✓</div>
               <h3>Request Received</h3>
-              <p>Thanks for reaching out. We will follow up within 1 business day to discuss your demo build.</p>
+              <p>Thanks for reaching out. We will follow up within 1 business day to talk through your platform and next steps.</p>
               <button className="btn btn-primary" onClick={handleClose}>Close</button>
             </div>
           ) : (
