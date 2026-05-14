@@ -4,6 +4,7 @@ import Modal from './Modal'
 const demos = [
   {
     id: 1,
+    brand: 'AgencyOS',
     name: 'AgencyOS White Label Client Portal',
     description: 'Client portal for tracking leads, campaigns, reviews, referrals, and monthly reports.',
     bestFit: 'Marketing agencies managing roofing companies, dental practices, auto repair, and home service clients.',
@@ -36,6 +37,7 @@ const demos = [
   },
   {
     id: 2,
+    brand: 'LocalLead',
     name: 'LocalLead Mini CRM',
     description: 'Simple CRM for contractors and local service businesses to track leads, estimates, follow ups, jobs, and reviews.',
     bestFit: 'HVAC companies, plumbers, contractors, roofers, and home service businesses.',
@@ -68,6 +70,7 @@ const demos = [
   },
   {
     id: 3,
+    brand: 'LocalBoost',
     name: 'LocalBoost Campaign Tracker',
     description: 'QR campaign, referral, redemption, and local promotion tracker for agencies and small businesses.',
     bestFit: 'Restaurants, retail shops, fitness studios, chamber campaigns, and local coalitions.',
@@ -170,7 +173,7 @@ export default function DemoHub({ onOpenDemo }) {
             {demos.map(demo => (
               <div key={demo.id} className="demo-card">
                 <div className="demo-card-number">{String(demo.id).padStart(2, '0')}</div>
-                <h3>{demo.name}</h3>
+                <h3><span className="demo-brand">{demo.brand}</span>{demo.name.slice(demo.brand.length)}</h3>
                 <p className="demo-card-desc">{demo.description}</p>
                 <div className="demo-card-bestfit">
                   <span className="label">Best fit: </span>{demo.bestFit}
