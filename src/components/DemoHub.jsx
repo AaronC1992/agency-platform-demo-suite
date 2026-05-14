@@ -34,6 +34,13 @@ const demos = [
       'Internal agency task and note layer behind the scenes',
       'Custom onboarding flows branded to your agency',
     ],
+    howItWorks: [
+      { title: 'Lead sources connect to a single inbox', desc: 'Website forms, ad campaigns, and manual entries all funnel into one lead list. No scraping email threads or digging through spreadsheets.' },
+      { title: 'Every lead is tagged by source and status', desc: 'Each lead shows where it came from — Google Ads, Facebook, website form, referral — so clients see exactly which marketing is producing calls.' },
+      { title: 'Your team moves deals through the pipeline', desc: 'You or the client updates the status as leads progress. Clients watch their jobs move from New to Won in a board they can check any time.' },
+      { title: 'Campaign data is entered or synced by your agency', desc: 'Your team enters or pulls in campaign performance numbers. Clients see clean charts without ever needing to log into an ad platform.' },
+      { title: 'Monthly reports build themselves', desc: 'At the end of each month the platform compiles a branded summary. The client downloads it or your agency sends it — no manual report writing.' },
+    ],
   },
   {
     id: 2,
@@ -67,6 +74,13 @@ const demos = [
       'Photo uploads for job documentation in the field',
       'Mobile friendly field version for techs on the road',
     ],
+    howItWorks: [
+      { title: 'Every new lead gets a card on the board', desc: 'Whether it comes in through a website form, a phone call your team logs, or a referral — it lands as a card in the pipeline ready to be worked.' },
+      { title: 'The team tracks each job as it moves forward', desc: 'Status updates like New, Contacted, Estimate Sent, Won, or Lost move the card across the board so nothing gets buried or forgotten.' },
+      { title: 'Estimates are built and sent from inside the platform', desc: 'The estimator lets your client put together a quote, add line items, and send it to the customer — all tracked in one place.' },
+      { title: 'Won jobs automatically trigger a review request', desc: 'When a job is marked Won, the platform sends a review request to the customer by email or text. Hands free, every time.' },
+      { title: 'Reports show the full business picture', desc: 'Revenue won, jobs lost, lead sources, and conversion rates all feed into a reports page the business owner can pull up any time.' },
+    ],
   },
   {
     id: 3,
@@ -99,6 +113,13 @@ const demos = [
       'Coalition campaigns across multiple local businesses',
       'Integration with Square, Clover, or any POS system',
       'Branded mobile friendly customer facing web app',
+    ],
+    howItWorks: [
+      { title: 'Your agency creates the campaign and generates a QR code', desc: 'You set up an offer, apply a redemption limit if needed, and the platform generates a unique QR code ready to print, text, or share digitally.' },
+      { title: 'Customers scan at the register, on a receipt, or from a flyer', desc: 'Every scan is logged — who scanned, when, and which placement the code came from. No app download required. Customers just scan and go.' },
+      { title: 'Claimed offers are marked redeemed by the business', desc: 'When a customer comes in to use a deal, the business taps redeemed in the platform. The coupon closes out and the data is captured.' },
+      { title: 'Customers who sign up go into a list the business owns', desc: 'Anyone who registers through a campaign is added to that business contact list — ready for future text or email promotions.' },
+      { title: 'Your agency dashboard shows everything across all businesses', desc: 'Scans, redemptions, signups, and referrals across every participating business are visible in one place so you can report results and pitch the next campaign.' },
     ],
   },
 ]
@@ -327,6 +348,20 @@ export default function DemoHub({ onOpenDemo }) {
           <div className="demo-preview">
             <p className="demo-preview-tagline">{previewDemo.tagline}</p>
             <p className="demo-preview-overview">{previewDemo.overview}</p>
+            <div className="demo-how-it-works">
+              <h4>How it works</h4>
+              <ol className="demo-how-steps">
+                {previewDemo.howItWorks.map((step, i) => (
+                  <li key={i} className="demo-how-step">
+                    <span className="demo-how-num">{i + 1}</span>
+                    <div className="demo-how-body">
+                      <strong>{step.title}</strong>
+                      <p>{step.desc}</p>
+                    </div>
+                  </li>
+                ))}
+              </ol>
+            </div>
             <div className="demo-preview-sections">
               <div className="demo-preview-section">
                 <h4>What it can do</h4>
